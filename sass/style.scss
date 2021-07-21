@@ -1,0 +1,784 @@
+@import "../partials/_variables.scss";
+@import "../partials/_mixin.scss";
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+::selection {
+    color: $blue_color;
+    background: transparent;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+@font-face {
+    font-family: 'isans';
+    src: url('fonts/eot/IRANSansWeb.eot?#') format('eot'),
+        /* IE6–8 */
+        url('fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+        /* Chrome36+, Opera24+*/
+        url('fonts/woff/IRANSansWeb.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'isans';
+    src: url('fonts/eot/IRANSansWeb.eot?#') format('eot'),
+        /* IE6–8 */
+        url('fonts/woff2/IRANSansWeb.woff2') format('woff2'),
+        /* Chrome36+, Opera24+*/
+        url('fonts/woff/IRANSansWeb.woff') format('woff');
+    /* FF3.6+, IE9, Chrome6+, Saf5.1+*/
+    font-weight: normal;
+}
+
+
+/*=== Trigger  ===*/
+.animate {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
+
+/*=== Optional Delays, change values here  ===*/
+.one {
+    -webkit-animation-delay: 0.7s;
+    animation-delay: 0.7s;
+}
+
+.two {
+    -webkit-animation-delay: 0.9s;
+    animation-delay: 0.9s;
+}
+
+.three {
+    -webkit-animation-delay: 1.1s;
+    animation-delay: 1.1s;
+}
+
+.four {
+    -webkit-animation-delay: 1.3s;
+    animation-delay: 1.3s;
+}
+
+.five {
+    -webkit-animation-delay: 1.4s;
+    animation-delay: 1.4s;
+}
+
+.six {
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s;
+}
+
+.seven {
+    -webkit-animation-delay: 1.75s;
+    animation-delay: 1.7s;
+}
+
+.eight {
+    -webkit-animation-delay: 1.9s;
+    animation-delay: 1.9s;
+}
+
+.nine {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+}
+
+/*=== Animations start here  ===*/
+/*=== FADE IN  ===*/
+@-webkit-keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn;
+}
+
+
+/*=== FADE IN DOWN ===*/
+@-webkit-keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, -100%, 0);
+        transform: translate3d(0, -100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+}
+
+/*==== FADE IN UP ===*/
+@-webkit-keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(0, 100%, 0);
+        transform: translate3d(0, 100%, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+
+/*=== FADE IN LEFT ===*/
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(-100%, 0, 0);
+        transform: translate3d(-100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInLeft {
+    -webkit-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+}
+
+
+/*==== FADE IN RIGHT ===*/
+@-webkit-keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        -webkit-transform: translate3d(100%, 0, 0);
+        transform: translate3d(100%, 0, 0);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: none;
+        transform: none;
+    }
+}
+
+.fadeInRight {
+    -webkit-animation-name: fadeInRight;
+    animation-name: fadeInRight;
+}
+
+
+.first_seqtion {
+    /*    background: linear-gradient(#070707, #191919);*/
+    background-color: #0a050c;
+
+    /*    height: 100%;*/
+}
+
+body {
+    background-color: $bg_color;
+    font-family: isans;
+    font-size: 14px;
+    color: $text_color;
+}
+
+.bg_triangles {
+    background-image: url(../images/triangles-bottom.svg), url(../images/triangles-bottom.svg);
+    background-position: left top, right bottom;
+    background-repeat: no-repeat;
+    background-size: inherit;
+}
+
+/*go to top btn style*/
+.go_to_top {
+    transform: translateY(80px);
+    display: block;
+    width: 40px;
+    height: 40px;
+    background: linear-gradient(to right, #0081ff 0%, #0045ff 100%);
+    border-radius: 50%;
+    text-decoration: none !important;
+    color: $text_color;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 10px 15px $border_color;
+    transition: all .3s ease-in;
+    font-size: 20px;
+
+    i {
+        @include center;
+        color: $text_color;
+        text-decoration: none !important;
+        transition: all .3s ease-in;
+
+        &:hover {
+            color: $container_bg_color;
+            text-decoration: none !important;
+
+        }
+    }
+
+}
+
+
+/*indicator_wrapper*/
+.indicator_wrapper {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    z-index: 100;
+}
+
+.indicator {
+    width: 0;
+    height: 100%;
+    background-color: $blue_color;
+    box-shadow: 0 2px 5px $blue_color;
+}
+
+
+/*loading_page*/
+
+
+.loading_page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: $container_bg_color;
+    text-decoration: none !important;
+    z-index: 100;
+    transition: all .3s ease-in;
+
+    .loading_circle {
+        @include center;
+        width: 69px;
+        height: 69px;
+        border: $loader_border_color;
+        border-right: none;
+        border-left: none;
+        border-radius: 50%;
+        box-shadow: 0 10px 15px $border_color;
+        transform: rotate(0deg);
+        animation-name: loader;
+        animation-iteration-count: infinite;
+        animation-duration: 1s;
+        animation-timing-function: linear;
+    }
+
+}
+
+.loaded {
+    opacity: 0;
+    visibility: hidden;
+}
+
+
+@keyframes loader {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+
+.container-fluid {
+    padding-top: 10rem;
+
+    .info {
+        width: 100%;
+        background-color: $container_bg_color;
+        box-shadow: $box_shadow;
+        border-radius: $border_radius;
+        transition: all .3s ease-in-out;
+        margin-bottom: 15px;
+
+
+        .profile_pic {
+            width: 100%;
+            display: table;
+            margin-left: auto;
+            margin-right: auto;
+            transition: all .3s ease-in-out;
+            border-radius: $border_radius;
+        }
+
+        .myName {
+            text-shadow: 2px 8px 6px rgba(32, 29, 42, 0.75), 0px -5px 35px rgba(32, 29, 42, 0.75);
+        }
+
+        .description {
+            width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+            background-color: $bg_color;
+            color: $text_color;
+            border-radius: 10rem;
+            padding: 0.5rem 1rem;
+            line-height: 1;
+            text-align: center;
+            white-space: nowrap;
+            vertical-align: baseline;
+        }
+
+        .social {
+            text-align: center;
+
+            a {
+                text-decoration: none;
+                color: $text_color;
+                transition: all .3s ease-in-out;
+            }
+        }
+
+        .social_link {
+            text-align: center;
+            font-size: 22px;
+            transition: all .3s ease-in-out;
+        }
+
+        .github {
+            &:hover {
+                color: #191919;
+                transition: all .3s ease-in-out;
+
+                i {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .linkedin {
+            &:hover {
+                color: #0e76a8;
+                transition: all .3s ease-in-out;
+
+                i {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .instagram {
+            &:hover {
+                color: #ff3be7;
+                transition: all .3s ease-in-out;
+
+                i {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .telegram {
+            &:hover {
+                color: #0088CC;
+                transition: all .3s ease-in-out;
+
+                i {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .dribbble {
+            &:hover {
+                color: #ea4c89;
+                transition: all .3s ease-in-out;
+
+                i {
+                    transform: scale(1.2);
+                }
+            }
+        }
+
+        .description_contactMe {
+            .description_contactMe_li {
+                list-style: none;
+                font-size: 18px;
+                transition: all .3s ease-in-out;
+
+                .fa-map-marker {
+                    font-size: 25px;
+                }
+
+                .fa-mobile {
+                    font-size: 30px;
+                }
+
+                .myEmailLink {
+                    text-decoration: none;
+                    color: $text_color;
+
+                    &:hover {
+                        color: $blue_color;
+                    }
+                }
+
+                &:hover {
+                    transform: translateX(-15px);
+                    color: $blue_color;
+
+                    .myEmailLink {
+                        color: $blue_color;
+                    }
+                }
+            }
+        }
+
+        .donloadCvLink {
+            text-decoration: none;
+            transition: all .3s ease-in-out !important;
+
+            .downloadCvBtn {
+                background: transparent;
+                border-top: 1px solid $blue_color;
+                border-top-right-radius: 0;
+                border-top-left-radius: 0;
+                border-bottom-right-radius: 20px;
+                border-bottom-left-radius: 20px;
+                color: $text_color;
+                list-style: none;
+                font-size: 22px;
+                transition: all .3s ease-in-out !important;
+
+                &:hover {
+                    background: $blue_color;
+                    text-decoration: none;
+
+                }
+            }
+        }
+    }
+
+    .main {
+        width: 100%;
+        background-color: $container_bg_color;
+        box-shadow: $box_shadow;
+        border-radius: $border_radius;
+        transition: all .3s ease-in-out;
+
+        .navUl {
+            list-style: none;
+            transition: all .3s ease-in-out;
+
+            .navLi {
+                display: inline-block;
+                color: $text_color;
+                transition: all .3s ease-in-out;
+                font-size: 16px;
+
+                a {
+                    color: $text_color;
+                    text-decoration: none;
+                    padding: 7px 15px;
+                    border-radius: 10px;
+                    transition: all .3s ease-in-out;
+
+                    &:hover {
+                        list-style: none;
+                        color: $text_color;
+                        border: $border_color;
+                        background: linear-gradient(to right, #0081ff 0%, #0045ff 100%);
+                    }
+                }
+
+
+
+            }
+        }
+
+        .abutMeLink {
+            color: $text_color;
+            text-decoration: none;
+            transition: all .3s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                color: $text_color;
+            }
+        }
+
+        hr {
+            background-color: $blue_color;
+        }
+
+        .abutMeCuntent {
+            direction: rtl;
+            text-align: justify;
+            line-height: 30px;
+            font-size: 16px;
+        }
+
+        .img_skill {
+            float: right;
+        }
+
+        .skill_box {
+            background-color: #2C283A;
+            padding: 15px;
+            border-radius: $border_radius;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+            }
+        }
+
+
+    }
+
+
+
+    #accordion {
+        width: 100%;
+
+        .h1 {
+            margin: auto;
+            line-height: 50px;
+            background-color: #2C283A;
+            font-family: iransans;
+            font-size: 13px;
+            color: $text_color;
+            padding: 10px;
+            cursor: pointer;
+            text-align: right;
+            vertical-align: middle;
+        }
+
+        .border-top {
+            border-top-left-radius: 10px !important;
+            border-top-right-radius: 10px !important;
+        }
+
+        .p {
+            margin: auto;
+            line-height: 30px;
+            background-color: $icon_bg_color;
+            font-family: iransans;
+            font-size: 13px;
+            color: $text_color;
+            padding: 10px;
+            text-align: justify;
+        }
+
+        .border-bottom {
+            border-bottom-left-radius: 10px !important;
+            border-bottom-right-radius: 10px !important;
+        }
+
+        .acaredon_active {
+            background-color: $blue_color;
+        }
+
+        .myaccordionLink {
+            text-decoration: none;
+            border-bottom: 2px dashed #2C283A;
+            padding: 0 5px 7px 5px;
+            color: #2C283A;
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                border-bottom: $border_color;
+                color: $blue_color;
+            }
+        }
+
+        .fa-angle-down {
+            font-size: 22px;
+            font-weight: bold;
+            vertical-align: middle;
+        }
+
+    }
+
+    .btn {
+        color: $text_color;
+        padding: 5px 15px;
+        width: fit-content;
+        display: table;
+        margin-left: auto;
+        margin-right: auto;
+        border: $border_color;
+        border-radius: 15px;
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            background: $blue_color;
+        }
+    }
+
+    .customer {
+        background-image: url(../images/icon-quote.svg);
+        background-repeat: no-repeat;
+
+        .customerTitle {
+            color: $blue_color;
+        }
+    }
+
+    .footer {
+        font-size: 22px;
+        transition: all .3s ease-in-out;
+
+
+        .fa-file-code-o {
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: $blue_color;
+            }
+        }
+
+        .fa-coffee {
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: brown;
+            }
+        }
+
+        .fa-heart {
+            transition: all .3s ease-in-out;
+
+            &:hover {
+                color: red;
+            }
+        }
+    }
+    .img_skill{
+        vertical-align: middle;
+        padding-bottom: 20px;
+    }
+    .skillTitle{
+        vertical-align: middle;
+        
+    }
+
+}
+
+
+@media (max-width: 992px) {
+    .skill_content{
+        text-align: center !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

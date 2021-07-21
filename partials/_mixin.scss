@@ -1,0 +1,18 @@
+@mixin center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+@mixin center2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin web_icon {
+    width: 30px;
+    height: 30px;
+    padding: 0 10px;
+}
